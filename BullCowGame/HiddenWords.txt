@@ -1,0 +1,10 @@
+planet,5
+files,5
+unreal,5
+engine,5
+note,5
+smartphone,7
+cellphone,7
+people,5
+king,4
+queen,4
