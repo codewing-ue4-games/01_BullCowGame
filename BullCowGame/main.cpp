@@ -97,6 +97,15 @@ void PlayGame() {
 
 void PrintIntro() {
 	const int32 WORD_LENGTH = BCGame.GetHiddenWordLength();
+	std::cout << "    ,           ," << std::endl;
+	std::cout << "   /             \\" << std::endl;
+	std::cout << "  ((__-^^-,-^^-__))" << std::endl;
+	std::cout << "   `-_---' `---_-'" << std::endl;
+	std::cout << "    <__|o` 'o|__>" << std::endl;
+	std::cout << "       \\  `  /" << std::endl;
+	std::cout << "        ): :(" << std::endl;
+	std::cout << "        :o_o:" << std::endl;
+	std::cout << "         \"-\"" << std::endl;
 	std::cout << "Welcome to Bulls and Cows!" << std::endl;
 	FString WordOrIsogramm = "word";
 	if (BCGame.GetIsHiddenWordIsogram()) {
