@@ -27,7 +27,7 @@ int main() {
 }
 
 bool AskToPlayAgain() {
-	std::cout << std::endl << "Do you want to play again (Y/n)?";
+	std::cout << std::endl << "Do you want to play again (Y/n)?" << std::endl;
 	FText Response = "";
 	std::getline(std::cin, Response);
 	if (Response.empty() || Response[0] == 'Y') {
@@ -62,7 +62,7 @@ FText GetValidGuess()
 
 		case EGuessStatus::NOT_ISOGRAM:
 		{
-			std::cout << "The word is not an isogramm (" << Guess << ")." << std::endl;
+			std::cout << "The word is not an isogram (" << Guess << ")." << std::endl;
 		}break;
 
 		case EGuessStatus::NOT_LOWERCASE_WORD:
@@ -100,7 +100,7 @@ void PrintIntro() {
 	std::cout << "Welcome to Bulls and Cows!" << std::endl;
 	FString WordOrIsogramm = "word";
 	if (BCGame.GetIsHiddenWordIsogram()) {
-		WordOrIsogramm = "isogramm";
+		WordOrIsogramm = "isogram";
 	}
 	std::cout << "Can you guess the " << WORD_LENGTH << " letter " << WordOrIsogramm << " I'm thinking of?" << std::endl;
 }
